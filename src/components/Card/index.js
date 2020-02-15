@@ -1,12 +1,21 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-
-import styled from 'styled-components/native';
+import React from "react";
+import { View, Text, StyleSheet, Image } from "react-native";
+import visa from '../../assets/cards/visa';
 
 export default function Card(props) {
   return (
-    <View style={}>
-      <Text>cartão</Text>
+    <View style={styles.card}>
+      <Image source={visa}/>
+      
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  card: {
+    width: 120,
+    height: 70,
+    backgroundColor: 'blue',
+    borderRadius: 5
+  }
+});
