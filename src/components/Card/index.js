@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
-import visa from '../../assets/cards/visa';
+import visa from '../../assets/cards/visa.png';
 
 export default function Card(props) {
   return (
