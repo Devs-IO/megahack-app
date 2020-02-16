@@ -1,14 +1,35 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-
+import { View, Text, TouchableOpacity, StyleSheet,Image } from 'react-native';
 
 // import { Container } from './styles';
 
 export default function Profile() {
   return (
     <View style={styles.container}>
-      <View style={styles.viewSuperior}></View>
+      <View style={styles.viewSuperior}>
+
+        <TouchableOpacity style={styles.Fechar}>
+          <Image source={require('../assets/icons/arrow.png')}/>
+        </TouchableOpacity>
+
+      </View>
       <View style={styles.viewVerdePerfil}>
+
+        <View style={styles.Qrcode}></View>
+        <View style={styles.Dados}>
+          <Text style={styles.Nome}>Andre L S Oliveira</Text>
+          <Text style={styles.Nome}>065.524.251-42</Text>
+
+          <View style={styles.Id}>
+            <Text style={styles.Subtitulo}>ufUNS465ah</Text>
+            <View style={styles.Linha}></View>
+            <Image source={require('../assets/icons/copy.png')} style={{marginLeft:15}}/>
+
+          </View>
+
+        </View>
+        
+        
         
       </View>
 
@@ -69,7 +90,8 @@ const styles = StyleSheet.create({
     height:'30%',
     backgroundColor:'#347474',
     display: 'flex',
-    flexDirection:'column',
+    alignItems:'center',
+    flexDirection:'row',
     borderTopStartRadius:30,
     borderBottomEndRadius:30,
     zIndex:2
@@ -120,6 +142,53 @@ const styles = StyleSheet.create({
     color:'#ffff',
     fontSize:26,
     fontWeight:'700',
+  },
+  Qrcode:{
+    width:150,
+    height:150,
+    backgroundColor:'#ffff',
+    borderRadius:10,
+    marginLeft:30
+  },
+  Nome:{
+    color:'#ffff',
+    fontSize:26,
+    fontWeight:'700',
+    marginLeft:10
+  },
+  Dados:{
+    width:200,
+    height:150,
+    borderRadius:10,
+    marginLeft:20
+  },
+
+  Id:{
+    width:'100%',
+    height:'40%',
+    backgroundColor:'#ffff',
+    borderRadius:10,
+    marginTop:20,
+    flexDirection:'row',
+    justifyContent:'flex-start',
+    alignItems:'center',
+    paddingLeft:10
+  },
+  Linha:{
+    width:'1%',
+    height:'100%',
+    backgroundColor:'#347474',
+    marginLeft:60
+  },
+  Fechar:{
+    width:50,
+    height:50,
+    backgroundColor:'#FFF',
+    marginLeft:30,
+    marginTop:30,
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius:10
 
   }
  
