@@ -12,6 +12,8 @@ export default function Profile() {
           <Image source={require('../assets/icons/arrow.png')}/>
         </TouchableOpacity>
 
+        <Text style={styles.topo}>Minha Conta</Text>
+
       </View>
       <View style={styles.viewVerdePerfil}>
 
@@ -82,7 +84,7 @@ const styles = StyleSheet.create({
     height:'20%',
     backgroundColor:'#EFEFEF',
     display: 'flex',
-    flexDirection:'column',
+    flexDirection:'row',
     zIndex:1
   },
   viewVerdePerfil:{
@@ -132,6 +134,12 @@ const styles = StyleSheet.create({
     color:'#347474',
     fontSize:18,
     fontWeight:'700',
+  },
+  topo:{
+    color:'#347474',
+    fontSize:36,
+    fontWeight:'700',
+    marginTop:30,
   },
   Subtitulo:{
     color:'#323232',
@@ -185,6 +193,7 @@ const styles = StyleSheet.create({
     height:50,
     backgroundColor:'#FFF',
     marginLeft:30,
+    marginRight:50,
     marginTop:30,
     justifyContent:'center',
     alignItems:'center',
