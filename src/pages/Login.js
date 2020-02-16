@@ -26,8 +26,7 @@ export default function Login() {
 
         <View style={styles.ViewInput}>
           <Text style={styles.TextInput}>Senha</Text>
-          <TextInput style={styles.Input} secureTextEntry={true} autoCapitalize='none'
-          style={styles.TextInput}></TextInput>
+          <TextInput style={styles.Input} secureTextEntry={true} autoCapitalize='none'></TextInput>
           <View style={styles.ViewFina}></View>
         </View>
 
