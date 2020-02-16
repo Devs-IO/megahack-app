@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-//import Card from '../components/Card'
+import Card from '../components/Card'
 
 // import { Container } from'./styles';
 
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Text>Home Page, rendered in React Navigation(TM)</Text>
-      <Card />
+      <Card type="master" end="4658" limit={200}/>
     </View>
   );
 }

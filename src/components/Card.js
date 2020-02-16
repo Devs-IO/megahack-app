@@ -2,9 +2,9 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import styled from "styled-components/native";
 
-import visa from "../../assets/cards/visa.png";
-import master from "../../assets/cards/mastercard.svg";
-import eye from "../../assets/icons/olho.svg";
+import visa from "../assets/cards/visa.png";
+import master from "../assets/cards/mastercard.svg";
+import eye from "../assets/icons/olho.svg";
 
 const cardtypes = {
   visa,
