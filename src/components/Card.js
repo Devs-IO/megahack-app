@@ -6,10 +6,27 @@ import visa from "../assets/cards/visa.png";
 import master from "../assets/cards/mastercard.svg";
 import eye from "../assets/icons/olho.svg";
 
-const cardtypes = {
-  visa,
-  master
-};
+const cardtypes = { visa, master };
+export default function Card({ type, end, limit }) {
+  return (
+    <Container>
+      <CardContainer>
+        <Image style={styles.firstLine} source={cardtypes[type]} />
+        <View style={styles.firstLine} />
+        <Image style={styles.firstLine} source={eye} />
+        <CardNumber>**** **** **** {end}</CardNumber>
+      </CardContainer>
+      <Limit>
+        <TextSaldo>R$ {limit}</TextSaldo>
+        <SmallText> de limite</SmallText>
+      </Limit>
+    </Container>
+  );
+}
+
+const styles = StyleSheet.create({
+  firstLine: { flex: 1, height: 20 }
+});
 
 const Container = styled.View`
   width: 136px;
@@ -18,36 +35,32 @@ const Container = styled.View`
 `;
 
 const CardContainer = styled.View`
-  display: grid;
-  grid-template-columns: 30px auto 20px;
-  grid-template-rows: 20px auto 25px;
+  display: flex;
+  flex-wrap: wrap;
   height: 70px;
   background-color: #347474;
   border-radius: 10px;
-  padding: 8px;
+  padding: 12px;
+`;
+
+const CardNumber = styled.View`
+  padding-top: 10px;
+  flex-basis: 100%;
+  font-size: 12px;
+  color: white;
+`;
+
+const TextSaldo = styled.View`
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+const SmallText = styled.View`
+  font-size: 14px;
 `;
 
 const Limit = styled.View`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   align-content: flex-end;
 
   padding: 0px 8px;
 `;
-
-export default function Card({ type, end, limit }) {
-  return (
-    <Container>
-      <CardContainer>
-        <Image source={cardtypes[type]} />
-        <Image source={eye} />
-        <Text>**** **** **** {end}</Text>
-      </CardContainer>
-      <Limit>
-        <Text>R$ {limit}</Text>
-        <Text> de limite</Text>
-      </Limit>
-    </Container>
-  );
-}
