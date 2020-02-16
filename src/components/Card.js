@@ -43,24 +43,24 @@ const CardContainer = styled.View`
   padding: 12px;
 `;
 
-const CardNumber = styled.View`
+const CardNumber = styled.Text`
   padding-top: 10px;
   flex-basis: 100%;
   font-size: 12px;
   color: white;
 `;
 
-const TextSaldo = styled.View`
+const TextSaldo = styled.Text`
   font-size: 18px;
   font-weight: bold;
 `;
 
-const SmallText = styled.View`
+const SmallText = styled.Text`
   font-size: 14px;
 `;
 
 const Limit = styled.View`
   align-content: flex-end;
-
+  flex-direction: row;
   padding: 0px 8px;
 `;
