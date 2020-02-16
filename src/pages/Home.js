@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Card from '../../components/Card'
+//import Card from '../components/Card'
 
-// import { Container } from './styles';
+// import { Container } from'./styles';
 
 export default function Home() {
   return (
