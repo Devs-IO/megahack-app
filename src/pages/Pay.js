@@ -10,7 +10,6 @@ export default function Pay() {
             <TouchableOpacity style={styles.Fechar}>
             <Image source={require('../assets/icons/arrow.png')}/>
             </TouchableOpacity>
-
             <Text style={styles.topo}>Realizar pagamento</Text>
         </View>
 
@@ -19,16 +18,19 @@ export default function Pay() {
             style={{width:45, height:40}}/>
             <Text style={styles.Subtitulo}>Pagar boleto</Text>
         </TouchableOpacity>
+
         <TouchableOpacity style={styles.itemDois}>
             <Image source={require('../assets/icons/transfer.png')}
             style={{width:45, height:45, marginTop:20,}}/>
             <Text style={styles.Subtitulo}>Transferir</Text>
         </TouchableOpacity>
+
         <TouchableOpacity style={styles.itemTres}>
             <Image source={require('../assets/icons/cobrar.png')}
             style={{width:45, height:45, marginTop:20,}}/>
             <Text style={styles.Subtitulo}>Cobrar</Text>
         </TouchableOpacity>
+        
         <TouchableOpacity style={styles.itemQuatro}>
             <Image source={require('../assets/icons/qr.png')}
             style={{width:45, height:45, marginTop:20}}/>
