@@ -13,10 +13,27 @@ export default function Pay() {
 
             <Text style={styles.topo}>Realizar pagamento</Text>
         </View>
-        <View style={styles.item}></View>
-        <View style={styles.itemDois}></View>
-        <View style={styles.itemTres}></View>
-        <View style={styles.itemQuatro}></View>
+
+        <TouchableOpacity style={styles.item}>
+            <Image source={require('../assets/icons/scanner.png')}
+            style={{width:45, height:40}}/>
+            <Text style={styles.Subtitulo}>Pagar boleto</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.itemDois}>
+            <Image source={require('../assets/icons/transfer.png')}
+            style={{width:45, height:45, marginTop:20,}}/>
+            <Text style={styles.Subtitulo}>Transferir</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.itemTres}>
+            <Image source={require('../assets/icons/cobrar.png')}
+            style={{width:45, height:45, marginTop:20,}}/>
+            <Text style={styles.Subtitulo}>Cobrar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.itemQuatro}>
+            <Image source={require('../assets/icons/qr.png')}
+            style={{width:45, height:45, marginTop:20}}/>
+            <Text style={styles.Subtitulo}>Transferir por QrCode</Text>
+        </TouchableOpacity>
         
 
 
@@ -35,7 +52,7 @@ const styles = StyleSheet.create({
     },
     viewSuperior:{
         width:'100%',
-        height:'20%',
+        height:'30%',
         backgroundColor:'#EFEFEF',
         display: 'flex',
         flexDirection:'row',
@@ -57,7 +74,9 @@ const styles = StyleSheet.create({
         height:'15%',
         backgroundColor:'#ffff',
         display: 'flex',
+        paddingLeft:30,
         flexDirection:'column',
+        justifyContent:'center',
         borderTopStartRadius:30,
         borderBottomEndRadius:30,
         marginBottom:-25,
@@ -75,9 +94,11 @@ const styles = StyleSheet.create({
         height:'15%',
         backgroundColor:'#fff',
         display: 'flex',
+        paddingLeft:30,
         flexDirection:'column',
         borderTopStartRadius:30,
         borderBottomEndRadius:30,
+        justifyContent:'center',
         marginBottom:-25,
         shadowColor: "#000",
         shadowOffset: {
@@ -92,10 +113,12 @@ const styles = StyleSheet.create({
         width:'100%',
         height:'15%',
         backgroundColor:'#fff',
-        display: 'flex',
+        display:'flex',
+        paddingLeft:30,
         flexDirection:'column',
         borderTopStartRadius:30,
         borderBottomEndRadius:30,
+        justifyContent:'center',
         marginBottom:-25,
         shadowColor: "#000",
         shadowOffset: {
@@ -111,9 +134,11 @@ const styles = StyleSheet.create({
         height:'15%',
         backgroundColor:'#fff',
         display: 'flex',
+        paddingLeft:30,
         flexDirection:'column',
         borderTopStartRadius:30,
         borderBottomEndRadius:30,
+        justifyContent:'center',
         marginBottom:-25,
         shadowColor: "#000",
         shadowOffset: {
@@ -128,7 +153,12 @@ const styles = StyleSheet.create({
         color:'#347474',
         fontSize:36,
         fontWeight:'700',
-        marginTop:80,
+        marginTop:100,
+    },
+    Subtitulo:{
+        color:'#347474',
+        fontSize:20,
+        fontWeight:'700',
       },
 
 })

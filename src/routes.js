@@ -7,12 +7,6 @@ import Profile from './pages/Profile'
 import Pay from './pages/Pay'
 
 const Routes = createSwitchNavigator({
-  Profile: {
-    screen: Profile,
-      navigationOptions: {
-          header: null,
-        }
-  },
     Pay,
     Login: {
       screen: Login,
@@ -20,7 +14,12 @@ const Routes = createSwitchNavigator({
             header: null,
           }
     },
-    
+    Profile: {
+      screen: Profile,
+        navigationOptions: {
+            header: null,
+          }
+    },
     NewAccount,
     Home,
     
