@@ -6,9 +6,10 @@ import NewAccount from './pages/NewAccount'
 
 const Routes = createAppContainer(
   createSwitchNavigator({
+    NewAccount,
     Login,
     Home,
-    NewAccount
+    
   })
 );
 
