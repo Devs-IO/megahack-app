@@ -4,15 +4,30 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import NewAccount from './pages/NewAccount'
 import Profile from './pages/Profile'
+import Pay from './pages/Pay'
 
-const Routes = createAppContainer(
-  createSwitchNavigator({
-    Profile,
+const Routes = createSwitchNavigator({
+  Profile: {
+    screen: Profile,
+      navigationOptions: {
+          header: null,
+        }
+  },
+    Pay,
+    Login: {
+      screen: Login,
+        navigationOptions: {
+            header: null,
+          }
+    },
+    
     NewAccount,
-    Login,
     Home,
     
-  })
-);
+  });
 
-export default Routes;
+
+
+const AppContainer = createAppContainer(Routes)
+ 
+export default AppContainer

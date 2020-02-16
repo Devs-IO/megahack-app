@@ -1,9 +1,24 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet} from 'react-native';
 
+
 // import { Container } from './styles';
 
-export default function Login() {
+
+
+export default function Login({ navigation }) {
+
+  state = {
+    email:'',
+    password:''
+  }
+
+  const login = () =>{
+    alert(this.state.email)
+
+
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.divSuperior}>
@@ -30,7 +45,7 @@ export default function Login() {
           <View style={styles.ViewFina}></View>
         </View>
 
-        <TouchableOpacity style={styles.Botao}>
+        <TouchableOpacity style={styles.Botao} onPress={()=>login()}>
           <Text style={styles.TextEntrar} >Entrar</Text>
         </TouchableOpacity>
 
@@ -43,13 +58,6 @@ export default function Login() {
         </TouchableOpacity>
 
       </View>
-
-      
-
-      
-      
-
-      
 
     </View>
   );

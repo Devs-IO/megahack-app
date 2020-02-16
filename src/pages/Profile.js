@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     color:'#347474',
     fontSize:36,
     fontWeight:'700',
-    marginTop:30,
+    marginTop:80,
   },
   Subtitulo:{
     color:'#323232',
@@ -198,7 +198,6 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     borderRadius:10
-
   }
  
   
