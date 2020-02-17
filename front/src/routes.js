@@ -8,8 +8,7 @@ import Pay from './pages/Pay'
 import Intro from './pages/Intro'
 
 const Routes = createSwitchNavigator({
-    Intro,
-    Pay,
+    Home,
     Login: {
       screen: Login,
         navigationOptions: {
@@ -23,7 +22,10 @@ const Routes = createSwitchNavigator({
           }
     },
     NewAccount,
-    Home,
+    Pay,
+    Intro,
+    
+    
     
   });
 
