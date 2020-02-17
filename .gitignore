@@ -1,1 +1,4 @@
 backfiles
+node_modules
+.expo
+web-build
