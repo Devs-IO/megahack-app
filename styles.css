@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header,
+section {
+  min-height: 100vh;
+  background-color: #347474;
+  padding: 30px;
+}
+
+header {
+  background-image: url(assets/bg2.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header h1 {
+  color: white;
+  font-size: 144pt;
+  text-align: center;
+  text-shadow: 10px 10px #F6E049;
+  margin-bottom: 10vh;
+}
+
+header ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 64px;
+  width: 50vw;
+  margin-left: 5vw;
+}
+
+header li:nth-child(1) {
+  color: #fff;
+}
+
+header li:nth-child(2) {
+  color: #F6E049;
+}
+
+header li:nth-child(3) {
+  color: #F56476;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h2 {
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 100%;
+  text-transform: uppercase;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+section .phone {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 80vh;
+  margin: 0px 20px;
+  background: #E3E3E3;
+  -webkit-box-shadow: 40px 40px 40px rgba(119, 117, 117, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 10px #FFFFFF, inset -10px -10px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(255, 255, 255, 0.3);
+          box-shadow: 40px 40px 40px rgba(119, 117, 117, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 10px #FFFFFF, inset -10px -10px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .phone img {
+  height: 90%;
+}
+
+.yellow {
+  color: #F6E049;
+}
+
+.salmon {
+  color: #F56476;
+}
+
+.green {
+  color: #4BFF47;
+}
+
+.white {
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

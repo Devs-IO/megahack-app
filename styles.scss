@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap');
+
+$white: #fff;
+$yellow: #F6E049;
+$salmon: #F56476;
+
+$light-green: #4BFF47;
+$dark-green: #347474;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    //body
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: $white;
+    box-sizing: border-box;
+}
+
+header,
+section {
+    min-height: 100vh;
+    background-color: $dark-green;
+    padding: 30px;
+}
+
+header {
+
+    background-image: url(assets/bg2.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        color: white;
+        font-size: 144pt;
+        text-align: center;
+        text-shadow: 10px 10px $yellow;
+        margin-bottom: 10vh;
+    }
+
+    ul {
+        list-style: none;
+        text-transform: uppercase;
+        font-family: Poppins;
+        font-weight: 800;
+        font-size: 64px;
+        width: 50vw;
+        margin-left: 5vw;
+    }
+
+    li:nth-child(1) {
+        color: $white;
+    }
+
+    li:nth-child(2) {
+        color: $yellow;
+    }
+
+    li:nth-child(3) {
+        color: $salmon;
+    }
+}
+
+section {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h2 {
+        font-weight: 800;
+        font-size: 96px;
+        line-height: 100%;
+        text-transform: uppercase;
+        flex: 2;
+    }
+
+    .phone {
+        flex: 1;
+        height: 80vh;
+        margin: 0px 20px;
+
+        background: #E3E3E3;
+        box-shadow: 40px 40px 40px rgba(119, 117, 117, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 10px #FFFFFF, inset -10px -10px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(255, 255, 255, 0.3);
+        border-radius: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 90%;
+        }
+    }
+}
+
+
+.yellow {
+    color: $yellow
+}
+
+.salmon {
+    color: $salmon
+}
+
+.green {
+    color: $light-green
+}
+
+.white {
+    color: $white
+}

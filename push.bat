@@ -1,0 +1,1 @@
+npx gh-pages -d . -r https://github.com/Devs-IO/megahack-app
