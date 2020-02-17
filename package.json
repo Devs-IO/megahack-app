@@ -4,7 +4,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",z
+    "web": "expo start --web",
+    "web-build": "expo build:web",
+    "web-publish": "gh-pages -d '/demo' -r https://github.com/Devs-IO/megahack-app",
     "eject": "expo eject"
   },
   "dependencies": {
@@ -24,7 +26,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "babel-preset-expo": "~8.0.0"
+    "babel-preset-expo": "~8.0.0",
+    "gh-pages": "^2.2.0"
   },
   "private": true
 }
