@@ -1,15 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "352386b69444736827fe",
-    "url": "/demo/static/js/app.02505dac.chunk.js"
+    "revision": "566bee36d576abe57e33",
+    "url": "/demo/static/js/app.f39b27d1.chunk.js"
   },
   {
     "revision": "a39c7c2470b8ed229fb3",
     "url": "/demo/static/js/runtime~app.e0f9d883.js"
   },
   {
-    "revision": "1c20bfd26a9a05dc7b3d",
-    "url": "/demo/static/js/2.e52ef304.chunk.js"
+    "revision": "7482a31ea913b30a1fdd",
+    "url": "/demo/static/js/2.049fd488.chunk.js"
+  },
+  {
+    "revision": "0549f202bcc32b572c8a5382ceaae432",
+    "url": "/demo/static/media/visa.0549f202.png"
+  },
+  {
+    "revision": "5728646d0efe718d1af3d6ec83a89bea",
+    "url": "/demo/static/media/olho.5728646d.svg"
   },
   {
     "revision": "3816aaeffdeb8b93d14fc14ac5c2abca",
@@ -20,12 +28,12 @@ self.__precacheManifest = [
     "url": "/demo/static/media/Imagen.f5dcbc9b.png"
   },
   {
-    "revision": "d0c694b562b2208635f250762cd7fc79",
-    "url": "/demo/serve.json"
-  },
-  {
     "revision": "7a7bc7ead25db795e58b336f04d2624c",
     "url": "/demo/favicon.ico"
+  },
+  {
+    "revision": "d0c694b562b2208635f250762cd7fc79",
+    "url": "/demo/serve.json"
   },
   {
     "revision": "48c7ed4e7da9792af288a60d7242d615",
@@ -96,7 +104,7 @@ self.__precacheManifest = [
     "url": "/demo/apple/splash/icon_828x1792.png"
   },
   {
-    "revision": "92f0a722785da9608c88a278cf3664bf",
+    "revision": "0ad402adc0885b0628c317e27fa6cae4",
     "url": "/demo/index.html"
   },
   {
@@ -104,15 +112,15 @@ self.__precacheManifest = [
     "url": "/demo/static/js/runtime~app.e0f9d883.js.gz"
   },
   {
+    "revision": "de5716303490962633b4746a88bca0b2",
+    "url": "/demo/static/js/app.f39b27d1.chunk.js.gz"
+  },
+  {
     "revision": "d5c897f0f97f669b9e417ea3d269865f",
     "url": "/demo/expo-service-worker.js.gz"
   },
   {
-    "revision": "8fdba3ebedd4714713104267721750fb",
-    "url": "/demo/static/js/app.02505dac.chunk.js.gz"
-  },
-  {
-    "revision": "24e545575e526c76ec4f638c907768af",
-    "url": "/demo/static/js/2.e52ef304.chunk.js.gz"
+    "revision": "871dc23bb8c7813cf05640268463bb6b",
+    "url": "/demo/static/js/2.049fd488.chunk.js.gz"
   }
 ];

@@ -1,10 +1,10 @@
 {
-  "app.js": "/demo/static/js/app.02505dac.chunk.js",
-  "app.352386b69444736827fe.map": "/demo/352386b69444736827fe.map",
+  "app.js": "/demo/static/js/app.f39b27d1.chunk.js",
+  "app.566bee36d576abe57e33.map": "/demo/566bee36d576abe57e33.map",
   "runtime~app.js": "/demo/static/js/runtime~app.e0f9d883.js",
   "runtime~app.a39c7c2470b8ed229fb3.map": "/demo/a39c7c2470b8ed229fb3.map",
-  "static/js/2.e52ef304.chunk.js": "/demo/static/js/2.e52ef304.chunk.js",
-  "1c20bfd26a9a05dc7b3d.map": "/demo/1c20bfd26a9a05dc7b3d.map",
+  "static/js/2.049fd488.chunk.js": "/demo/static/js/2.049fd488.chunk.js",
+  "7482a31ea913b30a1fdd.map": "/demo/7482a31ea913b30a1fdd.map",
   "apple/icons/icon_180x180.png": "/demo/apple/icons/icon_180x180.png",
   "apple/icons/icon_192x192.png": "/demo/apple/icons/icon_192x192.png",
   "apple/icons/icon_512x512.png": "/demo/apple/icons/icon_512x512.png",
@@ -25,12 +25,14 @@
   "favicon.ico": "/demo/favicon.ico",
   "index.html": "/demo/index.html",
   "manifest.json": "/demo/manifest.json",
-  "precache-manifest.6aec5f329b02885205de1c9480c7fc78.js": "/demo/precache-manifest.6aec5f329b02885205de1c9480c7fc78.js",
+  "precache-manifest.da9abfe63f4a0cdbef1f3b5b91f884ff.js": "/demo/precache-manifest.da9abfe63f4a0cdbef1f3b5b91f884ff.js",
   "serve.json": "/demo/serve.json",
   "service-worker.js": "/demo/service-worker.js",
-  "static/js/2.e52ef304.chunk.js.gz": "/demo/static/js/2.e52ef304.chunk.js.gz",
-  "static/js/app.02505dac.chunk.js.gz": "/demo/static/js/app.02505dac.chunk.js.gz",
+  "static/js/2.049fd488.chunk.js.gz": "/demo/static/js/2.049fd488.chunk.js.gz",
+  "static/js/app.f39b27d1.chunk.js.gz": "/demo/static/js/app.f39b27d1.chunk.js.gz",
   "static/js/runtime~app.e0f9d883.js.gz": "/demo/static/js/runtime~app.e0f9d883.js.gz",
   "static/media/Imagen.png": "/demo/static/media/Imagen.f5dcbc9b.png",
-  "static/media/cobrar.png": "/demo/static/media/cobrar.3816aaef.png"
+  "static/media/cobrar.png": "/demo/static/media/cobrar.3816aaef.png",
+  "static/media/olho.svg": "/demo/static/media/olho.5728646d.svg",
+  "static/media/visa.png": "/demo/static/media/visa.0549f202.png"
 }
