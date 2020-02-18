@@ -6,7 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "web-build": "expo build:web",
-    "web-publish": "gh-pages -d './web-build' -e './demo' -r https://github.com/Devs-IO/megahack-app",
+    "web-publish": "gh-pages -d './web-build' -e './expo' -r https://github.com/Devs-IO/megahack-app",
     "eject": "expo eject"
   },
   "dependencies": {
@@ -30,5 +30,5 @@
     "gh-pages": "^2.2.0"
   },
   "private": true,
-  "homepage": "https://vocemepa.ga/demo"
+  "homepage": "https://vocemepa.ga/expo"
 }
