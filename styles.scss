@@ -11,6 +11,8 @@ html {
     scroll-behavior: smooth;
 }
 
+// main styles
+
 * {
     //body
     margin: 0;
@@ -19,6 +21,35 @@ html {
     color: $white;
     box-sizing: border-box;
 }
+
+// colors
+
+.yellow {
+    color: $yellow
+}
+
+.salmon {
+    color: $salmon
+}
+
+.green {
+    color: $light-green
+}
+
+.white {
+    color: $white
+}
+
+section#contas {
+    background-color: lighten($color: $dark-green, $amount: 20);
+}
+
+section#app {
+    background-color: darken($color: $light-green, $amount: 30);
+}
+
+
+// desktop styles
 
 header,
 section {
@@ -29,7 +60,7 @@ section {
 
 header {
 
-    background-image: url(assets/bg2.png);
+    background-image: url(assets/bg2.jpg);
     background-size: cover;
     background-attachment: fixed;
 
@@ -80,7 +111,9 @@ section {
 
     .phone {
         flex: 1;
+        max-width: 480px;
         height: 80vh;
+        max-height: 1000px;
         margin: 0px 20px;
 
         background: #E3E3E3;
@@ -93,30 +126,53 @@ section {
 
         img {
             height: 90%;
+            width: 90%;
+            object-fit: scale-down;
         }
     }
 }
 
+@media only screen and (max-width:1300px) {
+    header {
 
-.yellow {
-    color: $yellow
+        h1 {
+            font-size: 96px;
+            width: 100%;
+        }
+
+        ul {
+            width: auto;
+            font-size: 32px;
+            margin-left: 0px;
+            text-align: center;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-weight: 600;
+            font-size: 48px;
+            flex: 1;
+            text-align: center;
+
+            margin-bottom: 20px;
+        }
+
+    }
 }
 
-.salmon {
-    color: $salmon
-}
+@media only screen and (max-width:480px) {
+    h1 {
+        font-size: 48px;
+    }
 
-.green {
-    color: $light-green
-}
+    section {
+        h2 {
+            font-size: 36px;
+        }
+    }
 
-.white {
-    color: $white
-}
-
-section#contas {
-    background-color: lighten($color: $dark-green, $amount: 20);
-}
-section#app {
-    background-color: darken($color: $light-green, $amount: 30);
 }

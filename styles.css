@@ -12,6 +12,30 @@ html {
           box-sizing: border-box;
 }
 
+.yellow {
+  color: #F6E049;
+}
+
+.salmon {
+  color: #F56476;
+}
+
+.green {
+  color: #4BFF47;
+}
+
+.white {
+  color: #fff;
+}
+
+section#contas {
+  background-color: #59b5b5;
+}
+
+section#app {
+  background-color: #04ad00;
+}
+
 header,
 section {
   min-height: 100vh;
@@ -20,7 +44,7 @@ section {
 }
 
 header {
-  background-image: url(assets/bg2.png);
+  background-image: url(assets/bg2.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -82,7 +106,9 @@ section .phone {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  max-width: 480px;
   height: 80vh;
+  max-height: 1000px;
   margin: 0px 20px;
   background: #E3E3E3;
   -webkit-box-shadow: 40px 40px 40px rgba(119, 117, 117, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 10px #FFFFFF, inset -10px -10px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(255, 255, 255, 0.3);
@@ -101,29 +127,48 @@ section .phone {
 
 section .phone img {
   height: 90%;
+  width: 90%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
-.yellow {
-  color: #F6E049;
+@media only screen and (max-width: 1300px) {
+  header h1 {
+    font-size: 96px;
+    width: 100%;
+  }
+  header ul {
+    width: auto;
+    font-size: 32px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section h2 {
+    font-weight: 600;
+    font-size: 48px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
-.salmon {
-  color: #F56476;
-}
-
-.green {
-  color: #4BFF47;
-}
-
-.white {
-  color: #fff;
-}
-
-section#contas {
-  background-color: #59b5b5;
-}
-
-section#app {
-  background-color: #04ad00;
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 48px;
+  }
+  section h2 {
+    font-size: 36px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

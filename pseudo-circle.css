@@ -1,0 +1,9 @@
+.pseudo-circle {
+position: absolute;
+width: 50rem;
+height: 50rem;
+background: rgba(20,40,40,0.6);
+border-radius: 50%;
+transform: translateY(-30%);
+z-index: 0;
+}
