@@ -22,10 +22,13 @@ section#contas {
     background-color: lighten($color: $dark-green, $amount: 20);
 }
 
-section#app {
-    background-color: darken($color: $light-green, $amount: 30);
-}
+// mixin
 
+@mixin phoneBG {
+    background-image: url(assets/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 // desktop styles
 
@@ -38,9 +41,7 @@ section {
 
 header {
 
-    background-image: url(assets/bg2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    @include phoneBG();
 
     h1 {
         color: white;
@@ -102,7 +103,35 @@ section {
             border-radius: 25px;
         }
     }
+
+    &#app {
+        @include phoneBG();
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-top: 5vh;
+        }
+
+        a {
+            display: inline-block;
+            border-radius: 5px;
+            padding: 1rem 0;
+            margin: 2em;
+            width: 48rem;
+            background: #FF6A6A;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+
+            font-weight: bold;
+        }
+
+
+    }
 }
+
+// mobile styles
 
 @media only screen and (max-width:1300px) {
     header {
@@ -133,6 +162,12 @@ section {
             margin-bottom: 20px;
         }
 
+        &#app {
+
+            a {
+                width: 80vw;
+            }
+        }
     }
 }
 

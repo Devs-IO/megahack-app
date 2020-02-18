@@ -32,10 +32,6 @@ section#contas {
   background-color: #59b5b5;
 }
 
-section#app {
-  background-color: #04ad00;
-}
-
 header,
 section {
   min-height: 100vh;
@@ -128,6 +124,36 @@ section .phone img {
   border-radius: 25px;
 }
 
+section#app {
+  background-image: url(assets/bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#app h2 {
+  margin-top: 5vh;
+}
+
+section#app a {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin: 2em;
+  width: 48rem;
+  background: #FF6A6A;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1300px) {
   header h1 {
     font-size: 96px;
@@ -156,6 +182,9 @@ section .phone img {
             flex: 1;
     text-align: center;
     margin-bottom: 20px;
+  }
+  section#app a {
+    width: 80vw;
   }
 }
 
