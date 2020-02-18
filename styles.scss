@@ -1,26 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap');
-
-$white: #fff;
-$yellow: #F6E049;
-$salmon: #F56476;
-
-$light-green: #4BFF47;
-$dark-green: #347474;
-
-html {
-    scroll-behavior: smooth;
-}
-
-// main styles
-
-* {
-    //body
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: $white;
-    box-sizing: border-box;
-}
+@import './base.scss';
 
 // colors
 
@@ -116,10 +94,7 @@ section {
         max-height: 1000px;
         margin: 0px 20px;
 
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center();
 
         img {
             height: 90%;

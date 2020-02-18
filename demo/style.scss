@@ -1,0 +1,36 @@
+@import '../base.scss';
+
+$framewidth: 428px;
+$frameheight: 804px;
+
+main {
+    background-color: $dark-green;
+    width: 100vw;
+    height: 100vh;
+
+    @include flex-center();
+}
+
+.app-container {
+
+    width: $framewidth + 60;
+    height: $frameheight + 80;
+
+    background-color: black;
+    border-radius: 20px;
+
+    @include flex-center();
+
+    iframe {
+        width: $framewidth;
+        height: $frameheight;
+        transform: translateY(-10px);
+    }
+}
+
+@media only screen and (max-height: $frameheight + 20) {
+    .app-container {
+        transform: scale(0.6);
+    }
+
+}
