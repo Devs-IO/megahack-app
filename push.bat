@@ -1,1 +1,1 @@
-npx gh-pages -d . -r https://github.com/Devs-IO/megahack-app
+npx gh-pages --add -d . -r https://github.com/Devs-IO/megahack-app

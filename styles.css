@@ -118,4 +118,12 @@ section .phone img {
 .white {
   color: #fff;
 }
+
+section#contas {
+  background-color: #59b5b5;
+}
+
+section#app {
+  background-color: #04ad00;
+}
 /*# sourceMappingURL=styles.css.map */

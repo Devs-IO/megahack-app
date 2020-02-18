@@ -113,3 +113,10 @@ section {
 .white {
     color: $white
 }
+
+section#contas {
+    background-color: lighten($color: $dark-green, $amount: 20);
+}
+section#app {
+    background-color: darken($color: $light-green, $amount: 30);
+}
