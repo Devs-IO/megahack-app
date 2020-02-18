@@ -3,12 +3,12 @@ import { View, Text, TouchableOpacity, StyleSheet,Image } from 'react-native';
 
 // import { Container } from './styles';
 
-export default function Profile() {
+export default function Profile({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.viewSuperior}>
 
-        <TouchableOpacity style={styles.Fechar}>
+        <TouchableOpacity style={styles.Fechar} onPress={()=> navigation.navigate('Home')}>
           <Image source={require('../assets/icons/arrow.png')}/>
         </TouchableOpacity>
 
@@ -56,7 +56,7 @@ export default function Profile() {
               <Text style={styles.Subtitulo}>{`Utilizada para confirmar movimentações`}</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.BotaoSair}>
+          <TouchableOpacity style={styles.BotaoSair} onPress={()=> navigation.navigate('Login')}>
               <Text style={styles.Sair}>Sair</Text>
           </TouchableOpacity>
             
