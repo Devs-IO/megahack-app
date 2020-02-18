@@ -110,10 +110,6 @@ section .phone {
   height: 80vh;
   max-height: 1000px;
   margin: 0px 20px;
-  background: #E3E3E3;
-  -webkit-box-shadow: 40px 40px 40px rgba(119, 117, 117, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 10px #FFFFFF, inset -10px -10px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(255, 255, 255, 0.3);
-          box-shadow: 40px 40px 40px rgba(119, 117, 117, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 10px #FFFFFF, inset -10px -10px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(255, 255, 255, 0.3);
-  border-radius: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,9 +123,9 @@ section .phone {
 
 section .phone img {
   height: 90%;
-  width: 90%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 22px;
 }
 
 @media only screen and (max-width: 1300px) {

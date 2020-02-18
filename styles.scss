@@ -116,9 +116,6 @@ section {
         max-height: 1000px;
         margin: 0px 20px;
 
-        background: #E3E3E3;
-        box-shadow: 40px 40px 40px rgba(119, 117, 117, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 10px #FFFFFF, inset -10px -10px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(255, 255, 255, 0.3);
-        border-radius: 40px;
 
         display: flex;
         align-items: center;
@@ -126,8 +123,8 @@ section {
 
         img {
             height: 90%;
-            width: 90%;
-            object-fit: scale-down;
+            box-shadow: 10px 10px 20px transparentize($color: #000000, $amount: 0.8);
+            border-radius: 22px;
         }
     }
 }
