@@ -6,9 +6,12 @@ import NewAccount from "./pages/NewAccount";
 import Profile from "./pages/Profile";
 import Pay from "./pages/Pay";
 import Intro from "./pages/Intro";
+import Wallet from './pages/Wallet'
+import Despesas from './pages/Despesas'
 
 const Routes = createSwitchNavigator({
-  
+  Despesas,
+  Wallet,
   Login: {
     screen: Login,
     navigationOptions: {
