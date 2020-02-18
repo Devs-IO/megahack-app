@@ -10,8 +10,8 @@ import {
 // import { Container } from './styles';
 
 export default function Login({ navigation }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("email@example.com");
+  const [password, setPassword] = useState("password");
 
   const login = () => {
     navigation.navigate("Home");

@@ -25,7 +25,7 @@ export default function Home({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate("Pay")}>
               <Text>Pagar</Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("Wallet")}>
               <Text>Minha Carteira</Text>
             </TouchableOpacity>
           </View>
@@ -40,13 +40,13 @@ export default function Home({ navigation }) {
           <TouchableOpacity>
             <Text>Depositar</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Pay")}>
             <Text>Pagar</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Despesas")}>
             <Text>Despesas</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
             <Text>Registros</Text>
           </TouchableOpacity>
         </View>

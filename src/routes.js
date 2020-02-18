@@ -10,8 +10,6 @@ import Wallet from './pages/Wallet'
 import Despesas from './pages/Despesas'
 
 const Routes = createSwitchNavigator({
-  Despesas,
-  Wallet,
   Login: {
     screen: Login,
     navigationOptions: {
@@ -25,8 +23,10 @@ const Routes = createSwitchNavigator({
     }
   },
   Home,
+  Wallet,
   NewAccount,
   Pay,
+  Despesas,
   Intro
 });
 

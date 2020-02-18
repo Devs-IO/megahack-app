@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native'
 
 // import { Container } from './styles';
 
-export default function Pay({navigation}) {
+export default function Despesas({navigation}) {
   return (
     <View style={styles.container}>
         <View style={styles.viewSuperior}>
