@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -15,6 +15,7 @@ export default function Login({ navigation }) {
 
   const login = () => {
     console.log(state);
+    navigation.navigate("Home");
   };
 
   return (
@@ -34,7 +35,7 @@ export default function Login({ navigation }) {
             maxLength={30}
             autoCapitalize="none"
             value={email}
-            onChange={setEmail}
+            onChangeText={(setEmail)}
           ></TextInput>
           <View style={styles.ViewFina}></View>
         </View>
@@ -46,7 +47,7 @@ export default function Login({ navigation }) {
             secureTextEntry={true}
             autoCapitalize="none"
             value={password}
-            onChange={setPassword}
+            onChangeText={setPassword}
           ></TextInput>
           <View style={styles.ViewFina}></View>
         </View>
