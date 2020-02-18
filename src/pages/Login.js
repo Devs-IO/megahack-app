@@ -14,7 +14,6 @@ export default function Login({ navigation }) {
   const [password, setPassword] = useState("");
 
   const login = () => {
-    console.log(state);
     navigation.navigate("Home");
   };
 
@@ -52,7 +51,7 @@ export default function Login({ navigation }) {
           <View style={styles.ViewFina}></View>
         </View>
 
-        <TouchableOpacity style={styles.Botao} onPress={() => login()}>
+        <TouchableOpacity style={styles.Botao} onPress={login}>
           <Text style={styles.TextEntrar}>Entrar</Text>
         </TouchableOpacity>
 
