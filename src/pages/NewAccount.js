@@ -67,7 +67,7 @@ export default function NewAccount({navigation}) {
             <Text style={styles.TextCancelar}>Cancelar</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.Botao} onPress={()=> navigation.navigate('Home')}>
+          <TouchableOpacity style={styles.Botao} onPress={() => navigation.navigate('Home')}>
             <Text style={styles.TextCadastrar}>Cadastrar</Text>
           </TouchableOpacity>
         </View>

@@ -1,21 +1,66 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
-import visa from '../../assets/cards/visa.png';
+import styled from "styled-components/native";
 
-export default function Card(props) {
+import visa from "../assets/cards/visa.png";
+import master from "../assets/cards/mastercard.svg";
+import eye from "../assets/icons/olho.svg";
+
+const cardtypes = { visa, master };
+export default function Card({ type, end, limit }) {
   return (
-    <View style={styles.card}>
-      <Image source={visa}/>
-      
-    </View>
+    <Container>
+      <CardContainer>
+        <Image style={styles.firstLine} source={cardtypes[type]} />
+        <View style={styles.firstLine} />
+        <Image style={styles.firstLine} source={eye} />
+        <CardNumber>**** **** **** {end}</CardNumber>
+      </CardContainer>
+      <Limit>
+        <TextSaldo>R$ {limit}</TextSaldo>
+        <SmallText> de limite</SmallText>
+      </Limit>
+    </Container>
   );
 }
 
 const styles = StyleSheet.create({
-  card: {
-    width: 120,
-    height: 70,
-    backgroundColor: 'blue',
-    borderRadius: 5
-  }
+  firstLine: { flex: 1, height: 20 }
 });
+
+const Container = styled.View`
+  width: 136px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+`;
+
+const CardContainer = styled.View`
+  display: flex;
+  flex-wrap: wrap;
+  height: 70px;
+  background-color: #347474;
+  border-radius: 10px;
+  padding: 12px;
+`;
+
+const CardNumber = styled.Text`
+  padding-top: 10px;
+  flex-basis: 100%;
+  font-size: 12px;
+  color: white;
+`;
+
+const TextSaldo = styled.Text`
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+const SmallText = styled.Text`
+  font-size: 14px;
+`;
+
+const Limit = styled.View`
+  align-content: flex-end;
+  flex-direction: row;
+  padding: 0px 8px;
+`;

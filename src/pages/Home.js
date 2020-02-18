@@ -1,7 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import Card from "../components/Card";
 
-export default function Home({navigation}) {
+export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.viewSuperior}></View>
@@ -21,7 +22,7 @@ export default function Home({navigation}) {
             <TouchableOpacity>
               <Text>Retirar</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={navigation.navigate('Pay')}>
+            <TouchableOpacity onPress={navigation.navigate("Pay")}>
               <Text>Pagar</Text>
             </TouchableOpacity>
             <TouchableOpacity>
@@ -29,7 +30,10 @@ export default function Home({navigation}) {
             </TouchableOpacity>
           </View>
         </View>
-        <View style={styles.viewCartao}></View>
+        <View style={styles.viewCartao}>
+          <Card type="visa" end="1238" limit={400} />
+          <Card type="master" end="4658" limit={200} />
+        </View>
         <View style={styles.viewBorda}></View>
 
         <View>
