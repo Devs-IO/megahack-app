@@ -3,11 +3,11 @@ import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native'
 
 // import { Container } from './styles';
 
-export default function Pay() {
+export default function Pay({navigation}) {
   return (
     <View style={styles.container}>
         <View style={styles.viewSuperior}>
-            <TouchableOpacity style={styles.Fechar}>
+            <TouchableOpacity style={styles.Fechar} onPress={() => navigation.navigate('Home')}>
             <Image source={require('../assets/icons/arrow.png')}/>
             </TouchableOpacity>
             <Text style={styles.topo}>Realizar pagamento</Text>

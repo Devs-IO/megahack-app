@@ -22,7 +22,7 @@ export default function Home({ navigation }) {
             <TouchableOpacity>
               <Text>Retirar</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={navigation.navigate("Pay")}>
+            <TouchableOpacity onPress={() => navigation.navigate("Pay")}>
               <Text>Pagar</Text>
             </TouchableOpacity>
             <TouchableOpacity>
