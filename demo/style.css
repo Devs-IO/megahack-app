@@ -28,8 +28,8 @@ main {
 }
 
 .app-container {
-  width: 488px;
-  height: 884px;
+  width: 448px;
+  height: 824px;
   background-color: black;
   border-radius: 20px;
   display: -webkit-box;
@@ -46,14 +46,5 @@ main {
 .app-container iframe {
   width: 428px;
   height: 804px;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-@media only screen and (max-height: 824px) {
-  .app-container {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
 }
 /*# sourceMappingURL=style.css.map */
