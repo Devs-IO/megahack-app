@@ -47,4 +47,13 @@ main {
   width: 428px;
   height: 804px;
 }
+
+@media only screen and (max-height: 824px) {
+  .app-container {
+    min-height: 80vh;
+    border-radius: 0px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
 /*# sourceMappingURL=style.css.map */

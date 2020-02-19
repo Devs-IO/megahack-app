@@ -30,7 +30,9 @@ main {
 
 @media only screen and (max-height: $frameheight + 20) {
     .app-container {
-        // transform: scale(0.6);
+        // width: 80vw;
+        min-height: 80vh;
+        border-radius: 0px;
+        transform: scale(0.8);
     }
-
 }
